@@ -1,0 +1,53 @@
+<div style="margin: auto; max-width: 1000px; margin-top:50px">
+    <data-table id="taxonomy-grid"
+        headerTitle="Taxonomy"
+        [items]="taxonomyComponents"
+        [itemCount]="taxonomyCount"
+        (reload)="reloadTaxonomy($event)"
+
+        [limit]="8"
+        [sortBy]="'domain'"
+        [sortAsc]="true"
+
+        [selectColumn]="true"
+        [multiSelect]="false"
+        [substituteRows]="false"
+        [expandableRows]="true"
+        [translations]="translations"
+        [indexColumnHeader]="'#'"
+        [selectOnRowClick]="true"
+        >
+        <ng-template #dataTableExpand let-item="item">
+            <div [textContent]="item.description" style="padding: 5px; color: gray"></div>
+        </ng-template>
+        <data-table-column
+            [property]="'domain'"
+            [header]="'Domain'"
+            [sortable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'function'"
+            [header]="'Function'"
+            [sortable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'process'"
+            [header]="'Process'"
+            [sortable]="true"
+            [cellColors]="cellColor">
+        </data-table-column>
+        <data-table-column
+            [property]="'discovery'"
+            [header]="'Discovery'">
+        </data-table-column>
+        <data-table-column
+            [property]="'requirement'"
+            [header]="'Requirement'">
+        </data-table-column>
+    </data-table>
+    <div style="margin-top: 10px">
+        <b>Selected:</b>
+        <span *ngIf="taxonomyTable.selectedRow == null"><i>No item selected</i></span>
+        <span [textContent]="taxonomyTable.selectedRow && taxonomyTable.selectedRow.item.domain"></span>
+    </div>
+</div>

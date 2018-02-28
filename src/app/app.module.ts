@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { TaxonomyModule } from './taxonomy/taxonomy.module';
+import { LoginModule } from './login/login.module';
+import { RegisterModule } from './register/register.module';
 
 import {
   ApiService,
@@ -15,7 +17,9 @@ import {
   HeaderComponent,
   JwtService,
   UserService,
-  SharedModule
+  SharedModule,
+  AlertService,
+  AuthenticationService
 } from './shared';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], {useHash: true });
@@ -31,12 +35,17 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], {useHash: true
     BrowserModule,
     rootRouting,
     TaxonomyModule,
-    SharedModule
+    SharedModule,
+    LoginModule,
+    RegisterModule,
+    FormsModule
   ],
   providers: [
     ApiService,
     JwtService,
-    UserService
+    UserService,
+    AlertService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })

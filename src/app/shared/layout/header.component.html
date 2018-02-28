@@ -1,0 +1,154 @@
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/" IA>
+      <img class="img-responsive" src="assets/images/IA-logo-RGB.png" style="width: 54px;height:54px;">
+    </a>
+
+    <!-- Show this for logged out users -->
+    <!--<ul *showAuthed="false"-->
+    <ul>
+      class="nav navbar-nav pull-xs-right">
+
+      <!-- TEMP REMOVE
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/">
+          Home
+        </a>
+      </li>
+      -->
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/login"
+          routerLinkActive="active">
+          Sign in
+        </a>
+      </li>
+
+      <!-- TEMP REMOVE
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/register"
+          routerLinkActive="active">
+          Sign up
+        </a>
+      </li>
+      -->
+
+      <!--
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/client"
+          routerLinkActive="active">
+          Client setup
+        </a>
+      </li>
+
+      
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/project"
+          routerLinkActive="active">
+          Project setup
+        </a>
+      </li>
+      -->
+
+      <!-- TEMP REMOVE
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/settings"
+          routerLinkActive="active">
+          <i class="ion-gear-a"></i>&nbsp;Settings
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+        routerLink="/tile"
+        routerLinkActive="active">
+        Dashboard
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/industry"
+          routerLinkActive="active">
+          Industry List
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/taxonomy"
+          routerLinkActive="active">
+          Taxonomy
+        </a>
+      </li>
+      -->
+
+    </ul>
+
+    <!-- Show this for logged in users -->
+    <!--
+    <ul *showAuthed="true"
+      class="nav navbar-nav pull-xs-right">
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">
+          Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/editor"
+          routerLinkActive="active">
+          <i class="ion-compose"></i>&nbsp;New Article
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/settings"
+          routerLinkActive="active">
+          <i class="ion-gear-a"></i>&nbsp;Settings
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          [routerLink]="['/profile', currentUser.username]"
+          routerLinkActive="active">
+          <img [src]="currentUser.image" *ngIf="currentUser.image" class="user-pic" />
+          {{ currentUser.username }}
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLine="/taxonomy"
+          routerLinkActive="active">
+          Taxonomy
+        </a>
+      </li>
+      -->
+
+      <!--
+      <li class="nav-item">
+        <a class="nav-Link"
+        routerLine="/signout"
+        routerLinkActive="active">
+        Sign out
+        </a>
+      </li>
+      
+
+    </ul>
+    -->
+
+  </div>
+</nav>

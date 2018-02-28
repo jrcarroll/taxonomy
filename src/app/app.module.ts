@@ -9,19 +9,35 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { TaxonomyModule } from './taxonomy/taxonomy.module';
 
+import {
+  ApiService,
+  FooterComponent,
+  HeaderComponent,
+  JwtService,
+  UserService,
+  SharedModule
+} from './shared';
+
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], {useHash: true });
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     rootRouting,
-    TaxonomyModule
+    TaxonomyModule,
+    SharedModule
   ],
-  providers: [],
+  providers: [
+    ApiService,
+    JwtService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

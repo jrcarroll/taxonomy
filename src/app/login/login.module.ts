@@ -8,7 +8,8 @@ import { SharedModule } from '../shared';
 
 const loginRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: 'login',
+    //path: 'login',
+    path: '',
     component: LoginComponent
     //,
     //canActivate: [NoAuthGuard]

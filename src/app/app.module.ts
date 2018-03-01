@@ -21,6 +21,16 @@ import {
   AlertService,
   AuthenticationService
 } from './shared';
+import { ClientModule } from './client/client.module';
+import { ProviderModule } from './provider/provider.module';
+import { DiscoveryModule } from './discovery/discovery.module';
+import { UsersModule } from './users/users.module';
+import { MatchingModule } from './matching/matching.module';
+import { TouchPointsModule } from './touch-points/touch-points.module';
+import { ScoringModule } from './scoring/scoring.module';
+import { RfpModule } from './rfp/rfp.module';
+import { ReportingModule } from './reporting/reporting.module';
+import { HomeModule } from './home/home.module';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], {useHash: true });
 
@@ -38,7 +48,17 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], {useHash: true
     SharedModule,
     LoginModule,
     RegisterModule,
-    FormsModule
+    FormsModule,
+    HomeModule,
+    ClientModule,
+    ProviderModule,
+    DiscoveryModule,
+    UsersModule,
+    MatchingModule,
+    TouchPointsModule,
+    ScoringModule,
+    RfpModule,
+    ReportingModule
   ],
   providers: [
     ApiService,

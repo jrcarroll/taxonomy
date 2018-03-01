@@ -5,7 +5,8 @@ import { AlertService, AuthenticationService } from '../shared/services/index';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'login.component.html'
+    templateUrl: 'login.component.html',
+    styleUrls: ['./login.component.css']
 })
 
 export class LoginComponent implements OnInit {
@@ -29,6 +30,8 @@ export class LoginComponent implements OnInit {
     }
 
     login(){
+        if(this.model.username == 'ia' && this.model.password == 'taxonomy') this.router.navigate(['home']);
+        /* Hardcoding this for now -- NEED TO FIX
         this.loading = true;
         this.authenticationService.login(this.model.username, this.model.password)
             .subscribe(
@@ -39,5 +42,6 @@ export class LoginComponent implements OnInit {
                     this.alertService.error(error);
                     this.loading = false;
                 });
+        **/
     }
 }

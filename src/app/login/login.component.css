@@ -1,0 +1,8 @@
+#stage{
+  width:100%;
+  height: 700px;
+  /*background:url('../../assets/images/IA-Home-Background.png') center center no-repeat;*/
+  color:#fff;
+  align-items:center;
+  justify-content:center;
+}

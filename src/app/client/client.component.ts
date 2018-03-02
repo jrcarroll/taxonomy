@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedModule } from '../shared';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-client',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent implements OnInit {
-
+  clientForm: FormGroup;
   constructor() { }
 
   ngOnInit() {

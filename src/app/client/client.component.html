@@ -1,3 +1,174 @@
-<p>
-  client works!
-</p>
+<div class="client-page">
+    <div class="row">
+    <div class="container page">
+        <h3>Client Profile</h3>
+
+        <form [formGroup]="clientForm">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="clientname">Client Name</label>
+                    <input type="text" class="form-control" id="clientname" placeholder="Client Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="industry">Industry</label>
+                    <select id="industry" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Get More Options</option>
+                        <option>Another Option</option>
+                    </select>
+                </div>
+            </div>
+
+            <fieldset class="form-group">
+                <label for="bizSummary">Business Summary</label>
+                <textarea class="form-control" rows="3"></textarea>
+                  
+                <!--
+                <input
+                    formControlName="bizSummary"
+                    placeholder="Business Summary"
+                    class="form-control"
+                    type="text"/>
+                    -->
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="website">Company Website</label>
+              <input type="text" class="form-control" id="inputWebsite">
+            </fieldset>
+
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <!-- add code to grab a state list here -->
+                        <option selected>Choose...</option>
+                        <option>AL</option>
+                        <option>AK</option>
+                        <option>AZ</option>
+                        <option>AR</option>
+                        <option>CA</option>
+                        <option>CO</option>
+                        <option>CT</option>
+                        <option>DE</option>
+                        <option>FL</option>
+                        <option>GA</option>
+                        <option>HI</option>
+                        <option>ID</option>
+                        <option>IL</option>
+                        <option>IN</option>
+                        <option>IA</option>
+                        <option>KS</option>
+                        <option>KY</option>
+                        <option>LA</option>
+                        <option>ME</option>
+                        <option>MD</option>
+                        <option>MA</option>
+                        <option>MI</option>
+                        <option>MN</option>
+                        <option>MS</option>
+                        <option>MO</option>
+                        <option>MT</option>
+                        <option>NE</option>
+                        <option>NV</option>
+                        <option>NH</option>
+                        <option>NJ</option>
+                        <option>NM</option>
+                        <option>NY</option>
+                        <option>NC</option>
+                        <option>ND</option>
+                        <option>OH</option>
+                        <option>OK</option>
+                        <option>OR</option>
+                        <option>PA</option>
+                        <option>RI</option>
+                        <option>SC</option>
+                        <option>SD</option>
+                        <option>TN</option>
+                        <option>TX</option>
+                        <option>UT</option>
+                        <option>VT</option>
+                        <option>VA</option>
+                        <option>WA</option>
+                        <option>WV</option>
+                        <option>WI</option>
+                        <option>WY</option>
+
+                    </select>
+                </div>
+
+                
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+
+
+
+            <fieldset class="form-group">
+                <label for="eePopulation">Number of Employees</label>
+                <input
+                    formControlName="eePopulation"
+                    placeholder="Number of Employees"
+                    class="form-control"
+                    type="number"/>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="keyLocations">Key Locations</label>
+                <input
+                    formControlName="keyLocations"
+                    placeholder="Key Locations"
+                    class="form-control"
+                    type="text"/>
+            </fieldset>
+
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="clientContact">Company Contact</label>
+                    <input type="text" class="form-control" id="inputClientContact">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="clientContactNumber">Phone</label>
+                  <input type="text" class="form-control" id="inputClientContactPhone">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="clientContactEmail">Email</label>
+                  <input type="text" class="form-control" id="inputClientContactEmail">
+                </div>
+            </div>
+
+
+            <fieldset class="form-group">
+              <label for="dealType">Deal Type</label>
+              <select id="inputDealType" class="form-control">
+                      <!-- add code to grab a state list here -->
+                        <option selected>Choose...</option>
+                        <option>Business Case Development</option>
+                        <option>Provider Selection</option>
+                        <option>Transition Services</option>
+                        <option>Contract Negotiation</option>
+                        <option>Provider-Client Relationship Remediation</option>
+                        <option>Provider Service Audit</option>
+                        <option>HR Service and Technology Diagnostic</option>
+              </select>
+            </fieldset>
+
+            
+        </form>
+    </div>
+    </div>
+
+</div>
